@@ -1,0 +1,299 @@
+
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#26372f;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1152px;margin:auto;padding-left:40px;padding-right:40px}
+.serif{font-family:Georgia,"Times New Roman",serif;color:#173a2e;letter-spacing:-.025em}
+.eye{text-transform:uppercase;letter-spacing:.17em;font-size:9px;font-weight:700;color:#50695d}
+.yellow{display:inline-flex;align-items:center;background:#ffc52d;color:#17251f;border-radius:999px;padding:13px 22px;font-size:12px;font-weight:700}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+nav{display:flex;align-items:center;gap:28px;font-size:10px}
+nav a{color:#4e5a54}
+.hero{padding:88px 0 90px;background:#f6f7f3}
+.hero-copy{max-width:760px}
+.hero h1{font-size:52px;line-height:1.04;margin:14px 0 24px}
+.hero .lead{font-size:17px;line-height:1.7;color:#59655f;max-width:720px;margin:0}
+.logos{padding:28px 0 20px}
+.logo-marquee{overflow:hidden;margin-top:18px;position:relative}
+.logo-track{display:flex;width:max-content;align-items:center;gap:58px;animation:logo-scroll 30s linear infinite}
+.logo-marquee:hover .logo-track{animation-play-state:paused}
+.logo-set{display:flex;align-items:center;gap:58px;padding-right:58px}
+.logo-item{white-space:nowrap;color:#78817c;font-size:14px;font-weight:650;letter-spacing:.02em}
+@keyframes logo-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.logo-track{animation:none;transform:none}.logo-set.duplicate{display:none}}
+.section{padding:96px 0}
+.section-head{max-width:720px;margin-bottom:50px}
+.section-title{font-size:34px;line-height:1.14;margin:12px 0 0}
+.facilitate-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:52px 76px}
+.capability h3{font-size:21px;margin:0 0 10px}
+.capability p{font-size:14px;line-height:1.7;color:#66716b;margin:0;max-width:460px}
+.capability.virtual{grid-column:1 / -1;background:#173e31;padding:36px 40px}
+.capability.virtual h3,.capability.virtual p{color:#fff}
+.capability.virtual p{color:rgba(255,255,255,.78);max-width:720px}
+.topics{background:#fff;padding:16px 0 104px}
+.topic-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 72px}
+.topic{padding:28px 30px;background:#f7f8f5;border:0}
+.topic h3{font-size:20px;margin:0 0 16px}
+.topic ul{list-style:none;padding:0;margin:0}
+.topic li{font-size:13px;line-height:1.65;color:#66716b;margin:5px 0}
+.topic li::before{content:"—";margin-right:9px;color:#8aa08f}
+
+.hire-ways{padding:62px 0 92px}
+.hire-ways .section-head{margin-bottom:34px}
+.advisory-block,.delivery-block{
+  display:grid;
+  grid-template-columns:58px minmax(0,1fr);
+  gap:24px;
+  padding:44px 0 46px;
+  border-top:1px solid #e5e9e4
+}
+.pillar-number{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:29px;
+  line-height:1;
+  color:#78907f;
+  padding-top:3px
+}
+.pillar-label{text-transform:uppercase;letter-spacing:.15em;font-size:9px;font-weight:700;color:#71906b;margin-bottom:10px}
+.pillar-title{font-size:36px;line-height:1.1;margin:0 0 15px;max-width:900px}
+.pillar-lead{font-size:15px;line-height:1.72;color:#5f6b65;max-width:850px;margin:0 0 18px}
+.pillar-topics{font-size:12px;line-height:1.8;color:#69766f;max-width:940px;margin:0}
+.topic-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:28px}
+.topic{padding:26px 28px;background:#f7f8f5;border:0}
+.topic h3{font-size:20px;margin:0 0 16px}
+.topic ul{list-style:none;padding:0;margin:0}
+.topic li{font-size:13px;line-height:1.65;color:#66716b;margin:5px 0}
+.topic li::before{content:"—";margin-right:9px;color:#8aa08f}
+.virtual-callout{margin-top:28px;background:#173e31;padding:34px 40px;color:#fff}
+.virtual-callout h3{color:#fff;font-size:24px;margin:10px 0 12px}
+.virtual-callout p{font-size:13px;line-height:1.75;color:rgba(255,255,255,.78);max-width:760px;margin:0}
+
+.how{background:#f6f7f3}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:54px}
+.step .num{font-size:10px;letter-spacing:.14em;color:#78907f;margin-bottom:16px}
+.step h3{font-size:23px;margin:0 0 14px}
+.step p{font-size:14px;line-height:1.7;color:#66716b;margin:0}
+.projects{padding:104px 0}
+.project{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:72px}
+.project:first-of-type{margin-top:52px}
+.project:nth-of-type(even) .project-visual{order:2}
+.project-visual{min-height:330px;background:linear-gradient(135deg,#879487,#3e584b);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.75);font-size:9px;letter-spacing:.14em;text-transform:uppercase}
+.project:nth-of-type(2) .project-visual{background:linear-gradient(135deg,#aa947e,#655b50)}
+.project:nth-of-type(3) .project-visual{background:linear-gradient(135deg,#93a18b,#c4aa77)}
+.project-copy .category{text-transform:uppercase;letter-spacing:.13em;font-size:8px;font-weight:700;color:#71906b}
+.project-copy h3{font-size:29px;line-height:1.14;margin:14px 0 18px}
+.project-copy p{font-size:14px;line-height:1.72;color:#616c66;margin:0 0 18px}
+.case-line{display:grid;grid-template-columns:70px 1fr;gap:12px;margin:0 0 20px;font-size:10px;line-height:1.6;color:#75817a}
+.case-line strong{color:#334b40;text-transform:uppercase;letter-spacing:.08em;font-size:8px}
+.view{display:inline-block;margin-top:6px;font-size:10px;font-weight:700;color:#29473a}
+.stats{display:flex;gap:32px;margin:24px 0}
+.stat strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:27px;color:#173a2e}
+.stat span{font-size:9px;color:#737d77}
+.tags{font-size:9px!important;color:#75817a!important;letter-spacing:.02em}
+.glance{background:#173e31;color:#fff;padding:76px 0}
+.glance .serif{color:#fff}
+.glance-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:38px}
+.glance-item{font-size:13px;color:rgba(255,255,255,.78)}
+.glance-item strong{display:block;color:#fff;font-size:15px;margin-bottom:5px}
+.contact{text-align:center;padding:92px 40px}
+.contact h2{font-size:34px;margin:12px 0 18px}
+.contact p{font-size:14px;line-height:1.7;color:#626d67;max-width:650px;margin:0 auto 26px}
+footer{padding:0 0 32px;display:flex;justify-content:space-between;font-size:9px;color:#7a827e}
+@media(max-width:767px){
+.wrap{padding-left:28px;padding-right:28px}
+nav{display:none}
+.hero{padding:64px 0}
+.hero h1{font-size:40px}
+.section{padding:68px 0}
+.facilitate-grid,.topic-grid,.how-grid,.project,.glance-grid{grid-template-columns:1fr}
+.advisory-block,.delivery-block{grid-template-columns:1fr;gap:12px;padding:36px 0}
+.pillar-number{font-size:25px}
+.pillar-title{font-size:31px}
+.capability.virtual{grid-column:auto}
+.project:nth-of-type(even) .project-visual{order:0}
+.project{gap:28px;margin-top:60px}
+.project-visual{min-height:240px}
+}
+
+/* V12 consolidation */
+.hero{padding:0;background:#f6f7f3}
+.hero-grid{
+  max-width:1152px;
+  min-height:470px;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:64px;
+  align-items:center;
+  padding-top:62px;
+  padding-bottom:62px
+}
+.hero-copy{max-width:650px}
+.hero h1{font-size:52px;line-height:1.04;margin:14px 0 24px}
+.hero .lead{max-width:620px}
+.hero-photo{
+  height:350px;
+  overflow:hidden;
+  background:#e8ebe5
+}
+.hero-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:50% 38%;
+  display:block
+}
+
+/* Keep the refined V11 feel for the two hiring routes */
+.hire-ways .wrap{max-width:1180px}
+.hire-ways .section-head{margin-bottom:28px}
+.advisory-block,.delivery-block{
+  grid-template-columns:108px minmax(0,1fr);
+  gap:28px;
+  padding:50px 0 52px
+}
+.pillar-number{
+  font-size:66px;
+  line-height:.9;
+  font-weight:400;
+  color:#cbd6cc;
+  letter-spacing:-.04em;
+  padding-top:7px
+}
+.pillar-content{max-width:930px}
+.pillar-title{max-width:850px;line-height:1.02;margin-top:10px}
+.pillar-lead{max-width:850px;margin-top:20px}
+.pillar-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:26px;
+  max-width:880px
+}
+.pillar-chips span{
+  display:inline-flex;
+  align-items:center;
+  min-height:34px;
+  padding:7px 12px 6px;
+  border:1px solid #dfe5dd;
+  background:#f8f9f5;
+  border-radius:999px;
+  font-size:14px;
+  line-height:1.2;
+  color:#607067
+}
+.delivery-block{padding-bottom:34px}
+.delivery-block .topic-grid{margin-top:28px;gap:14px}
+
+/* Restore V9 alternating Selected Work, now with bespoke visuals */
+.project-icon{
+  min-height:330px;
+  color:#244d3d;
+  overflow:hidden;
+  position:relative
+}
+.project-icon svg{
+  width:82%;
+  height:82%;
+  max-width:520px;
+  display:block
+}
+.gov-icon{background:#d9e0d6}
+.aramco-icon{background:#eadfce!important}
+.youz-icon{background:#e1e5da!important}
+
+@media(max-width:767px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+    min-height:0;
+    padding-top:54px;
+    padding-bottom:0
+  }
+  .hero-copy{max-width:none}
+  .hero h1{font-size:40px}
+  .hero-photo{height:300px;margin-left:-28px;margin-right:-28px}
+  .advisory-block,.delivery-block{
+    grid-template-columns:1fr;
+    gap:14px;
+    padding:38px 0 40px
+  }
+  .pillar-number{font-size:48px;padding-top:0}
+  .pillar-title{line-height:1.08}
+  .pillar-chips{gap:7px;margin-top:22px}
+  .pillar-chips span{font-size:13px}
+  .project-icon{min-height:250px}
+}
+
+
+/* V13 — text-only hero */
+.hero-grid{
+  max-width:1152px;
+  min-height:430px;
+  display:block;
+  padding-top:82px;
+  padding-bottom:82px
+}
+.hero-copy{max-width:760px}
+.hero h1{max-width:760px}
+@media(max-width:767px){
+  .hero-grid{min-height:0;padding-top:54px;padding-bottom:54px}
+}
+
+
+/* V14 — quieter advisory capability list */
+.editorial-topics{
+  margin-top:26px;
+  display:grid;
+  gap:8px;
+  font-size:15px;
+  line-height:1.55;
+  color:#66766d;
+  letter-spacing:.005em
+}
+.editorial-topics i{
+  font-style:normal;
+  color:#9aaa9f;
+  padding:0 5px
+}
+@media(max-width:767px){
+  .editorial-topics{font-size:14px;gap:6px}
+}
+
+
+/* V16 — match advisory keyword size to training topic keywords */
+.editorial-topics{
+  font-size:14px;
+}
+@media(max-width:767px){
+  .editorial-topics{font-size:14px}
+}
+
+
+/* V17 — advisory capabilities grouped like the training capability cards */
+.editorial-topics{
+  background:#f1f2ef;
+  padding:20px 24px;
+  margin-top:26px;
+  max-width:880px;
+}
+@media(max-width:767px){
+  .editorial-topics{
+    padding:18px 20px;
+  }
+}
+
+
+/* Integration: retain V19 layout and keep navigation available on mobile. */
+.mobile-navigation{display:none}
+.logo-track{gap:0}
+@media(prefers-reduced-motion:reduce){
+  .logo-track{width:100%}
+  .logo-set{flex-wrap:wrap;gap:16px 28px;padding-right:0;min-width:0}
+  .logo-item{white-space:normal}
+}
+@media(max-width:767px){
+  header{position:relative}
+  .mobile-navigation{display:block}
+  .mobile-navigation summary{cursor:pointer;font-size:12px;color:#4e5a54;padding:12px 0}
+  .mobile-navigation nav{display:flex;position:absolute;top:66px;left:0;right:0;z-index:2;flex-direction:column;align-items:flex-start;gap:18px;padding:24px;background:#fff;box-shadow:0 8px 20px #173a2e18}
+}

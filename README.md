@@ -9,4 +9,4 @@ Static portfolio website ready for GitHub Pages.
 4. Select **main** and **/(root)**, then Save.
 5. GitHub will show the public Pages address once deployment finishes.
 
-The contact links currently use `hello@eileenfarnham.com`. Change that in `index.html` if you want a different email before publishing.
+Contact forms are pending. Contact buttons do not expose an email address.
